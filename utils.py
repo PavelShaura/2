@@ -16,14 +16,14 @@ def get_candidate(candidate_id):
     """возвращает одного кандидата по его id"""
 
     for candidate in __data:
-        if candidate[id] in candidate_id:
+        if candidate["id"] == candidate_id:
             return {
                 'name': candidate['name'],
                 'position': candidate['position'],
                 'picture': candidate['picture'],
                 'skills': candidate['skills'],
-            }
-        return {'error': 'Упс, что то пошло не так.'}
+                }
+    return {'error': 'Упс, что то пошло не так.'}
 
 
 def get_candidates_by_name(candidate_name):

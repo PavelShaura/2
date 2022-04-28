@@ -5,14 +5,10 @@
     <title>{{ candidate.name }}</title>
 </head>
 <body>
-    {% if 'error' in candidates.keys() %)
-        <h1>{{ candidate.error }}</h1>
-    {% else %}
-        <h1>Имя кандидата: {{ candidate.name }}</h1>
-        <p>Позиция кандидата: {{ candidate.position }}</p>
-        <img src="{{ candidate.picture }}" width="200">
-        <p>Навыки кандидата: {{ candidate.skills }}</p>
-    {% endif %}
+    <h1>Имя кандидата: {{ candidate.name }}</h1>
+    <p>Позиция кандидата: {{ candidate.position }}</p>
+    <img src="{{ candidate.picture }}" width="200">
+    <p>Навыки кандидата: {{ candidate.skills }}</p>
 </body>
 </html>
 
